@@ -1,0 +1,140 @@
+.detail {
+  margin-top: 26px;
+  background: linear-gradient(160deg, var(--bg-1), #0e1118);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 20px;
+}
+.detailHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-bottom: 16px;
+}
+.detailTitle {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.detailTitle img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.sym {
+  font-size: 22px;
+  font-weight: 700;
+}
+.full {
+  font-family: var(--font-jetbrains), monospace;
+  font-size: 11px;
+  color: var(--txt-2);
+}
+.detailPrice {
+  text-align: right;
+}
+.p {
+  font-size: 26px;
+  font-weight: 700;
+}
+.cardChg {
+  font-family: var(--font-jetbrains), monospace;
+  font-size: 12px;
+  font-weight: 500;
+  margin-top: 2px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+.up {
+  color: var(--up);
+}
+.down {
+  color: var(--down);
+}
+
+.rail {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  overflow-x: auto;
+  padding: 4px 2px 14px;
+}
+.railLabel {
+  font-family: var(--font-jetbrains), monospace;
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: var(--txt-2);
+  white-space: nowrap;
+  padding-right: 6px;
+  flex: none;
+}
+.tfBtn {
+  flex: none;
+  font-family: var(--font-jetbrains), monospace;
+  font-size: 11.5px;
+  letter-spacing: 0.5px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  border: 1px solid var(--line);
+  background: var(--bg-1);
+  color: var(--txt-1);
+  cursor: pointer;
+  transition: 0.15s;
+  white-space: nowrap;
+}
+.tfBtn:hover {
+  border-color: var(--gold-dim);
+  color: var(--txt-0);
+}
+.active {
+  background: var(--gold);
+  border-color: var(--gold);
+  color: #0a0b0d;
+  font-weight: 700;
+}
+
+.err {
+  font-family: var(--font-jetbrains), monospace;
+  font-size: 11.5px;
+  color: var(--down);
+  padding: 10px 0;
+}
+
+.detailChart {
+  height: 320px;
+}
+
+.statStrip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 10px;
+  margin-top: 16px;
+}
+.stat {
+  background: var(--bg-0);
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  padding: 9px 12px;
+}
+.k {
+  font-family: var(--font-jetbrains), monospace;
+  font-size: 9.5px;
+  color: var(--txt-2);
+  letter-spacing: 1px;
+}
+.v {
+  font-family: var(--font-jetbrains), monospace;
+  font-size: 14px;
+  color: var(--txt-0);
+  margin-top: 3px;
+  font-weight: 500;
+}
+
+@media (max-width: 640px) {
+  .detailPrice {
+    text-align: left;
+  }
+}
