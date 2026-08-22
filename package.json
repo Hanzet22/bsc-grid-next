@@ -1,0 +1,25 @@
+{
+  "name": "bsc-grid",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Live BSC (BNB Smart Chain) coin chart board — Next.js + Chart.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "chart.js": "^4.4.4",
+    "chartjs-adapter-date-fns": "^3.0.0",
+    "date-fns": "^3.6.0",
+    "next": "14.2.15",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-chartjs-2": "^5.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "eslint-config-next": "14.2.15"
+  }
+}
