@@ -1,0 +1,76 @@
+:root {
+  --bg-0: #06070a;
+  --bg-1: #0c0f16;
+  --bg-2: #12161f;
+  --line: #1e2531;
+  --gold: #f5c542;
+  --gold-dim: #8a712a;
+  --cyan: #3ee6d6;
+  --up: #33e08a;
+  --down: #ff4d5e;
+  --txt-0: #eef1f6;
+  --txt-1: #8891a3;
+  --txt-2: #4d5566;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg-0);
+  color: var(--txt-0);
+  font-family: var(--font-rajdhani), sans-serif;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-0);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--line);
+  border-radius: 4px;
+}
+
+.mono {
+  font-family: var(--font-jetbrains), monospace;
+}
+
+a {
+  color: inherit;
+}
+
+.streaks {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.35;
+  background: repeating-linear-gradient(
+      100deg,
+      transparent 0 120px,
+      rgba(245, 197, 66, 0.035) 120px 122px
+    ),
+    repeating-linear-gradient(
+      80deg,
+      transparent 0 160px,
+      rgba(62, 230, 214, 0.03) 160px 162px
+    );
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
